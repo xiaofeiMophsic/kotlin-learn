@@ -11,6 +11,7 @@ import java.util.*
  */
 fun main(args: Array<String>) {
     println(getList())
+    println(getListExtension())
 }
 
 fun getList(): List<Int> {
@@ -20,4 +21,8 @@ fun getList(): List<Int> {
         override fun compare(x: Int, y: Int) = y - x
     })
     return arrayList
+}
+
+fun getListExtension(): List<Int> {
+    return arrayListOf(1, 2, 3).sortedDescending()
 }
